@@ -1,0 +1,1462 @@
+@charset "UTF-8" ;
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&display=swap');
+
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+img{
+    display: block;
+    width: 100%;
+}
+
+/* ----------------- header ----------------- */
+
+header{
+    position: relative;
+/*     height: 100%; */
+    width: 100%;
+}
+
+header .menu{
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    bottom: 20%;
+    z-index: 999;
+}
+
+header .menu li{
+    display: inline-block;
+/*     width: 220px; */
+}
+
+
+.menu a{
+/*     font-size: 1.1rem; */
+    font-weight: 400;
+    letter-spacing: 0.3rem;
+    color: #342E2C;
+    text-decoration: none;
+}
+
+.menu a:hover{
+    font-weight: 700;
+    color: #DA3C2C;
+    border-bottom: 2px solid #DA3C2C;
+    padding: 5px 20px;
+}
+
+/* 手機版 */
+@media (max-width: 767px) {
+    header{
+        height: 100vh;
+        background-image: url(./image/about_bg.png);
+        background-size: 100vh;
+    }
+    header .menu{
+        bottom: 10%;
+    }
+    header .menu li{
+        margin: 15px 0;
+    }
+    .menu a{
+        font-size: 1.3rem;
+        border-bottom: 1px solid #DA3C2C ;
+    }
+    header .menu li{
+        width: 220px;
+    }
+    header div{
+        width: 100%;
+    }
+    .banner_01{
+        display: none;
+    }
+    
+}
+
+/* 平板 */
+@media (min-width: 768px) {
+    header{
+     height: 40vh;
+     background-image: url(./image/about_bg.png);
+     background-size: 800px;
+    }
+    header .menu{
+        bottom: 8%;
+    }
+    .menu a{
+        font-size: 1rem;
+    }
+    header .menu li{
+        width: 110px;
+    }
+    .banner_02{
+        display: none;
+    }
+}
+
+/* 桌機*/
+@media (min-width: 992px) {
+    header{
+        height: 100%;
+    }
+    header .menu{
+        bottom: 20%;
+    }
+    .menu a{
+        font-size: 1.2rem;
+    }
+    header .menu li{
+        width: 220px;
+    }
+    .banner_02{
+        display: none;
+    }
+}
+
+
+
+
+/* ----------------- 共用區 ----------------- */
+
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+/*     height: 100vh; */
+}
+
+section h1{
+    color: #342E2C;
+    margin: 60px;
+    border-bottom: #DA3C2C 3px solid;
+/*     font-size: 1.8rem; */
+/*     padding: 10px 10px 10px 35px; */
+/*     letter-spacing: 1.5rem; */
+/*     width: 18%; */
+    text-align: center;
+}
+
+main{
+    position: relative;
+}
+
+
+/* 手機版 */
+@media (max-width: 767px) {
+    section h1{
+        font-size: 1.5rem;
+        width: 50%;
+        letter-spacing: 0.4rem;
+        padding: 10px;
+    }
+}
+
+/* 平板 */
+@media (min-width: 768px) {
+    section h1{
+        font-size: 1.5rem;
+        width: 40%;
+        letter-spacing: 1.2rem;
+        padding: 10px 10px 10px 35px;
+    }
+}
+
+/* 桌機*/
+@media (min-width: 992px) {
+    section h1{
+        font-size: 1.6rem;
+        width: 18%;
+        letter-spacing: 0.5rem;
+        padding: 10px;
+    }
+}
+
+
+
+/* ----------------- 關於我們 ----------------- */
+
+#about{
+    background-image: url(./image/about_bg.png);
+    background-size: 100%;
+}
+
+#about div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+/*     width: 80%; */
+}
+
+#about h2{
+    text-align: center;
+    color: #DA3C2C;
+    font-size: 1.6rem;
+    margin: 30px 50px 70px 50px;
+    letter-spacing: .13rem;
+}
+
+#about p{
+/*     width: 60%; */
+/*     font-size: 1.2rem; */
+/*     line-height: 3.3rem; */
+    text-align: center;
+    color: #342E2C;
+    letter-spacing: .1rem;
+    margin-bottom: 50px;
+}
+
+.about_ma{
+    position: absolute;
+/*     width: 23%; */
+/*     margin: 50px; */
+    left: -80px;
+}
+
+
+.about_bg01{
+    position: absolute;
+/*     width: 22%; */
+/*     margin-top: 250px; */
+    right: 0px;
+}
+
+
+/* 手機版 */
+@media (max-width: 767px) {
+    #about div{
+        width: 22rem;
+    }
+    #about h2{
+        font-size: 1.4rem;
+    }
+    #about p{
+        width: 100%;
+        font-size: 1.2rem;
+        line-height: 2.6rem;
+    }
+    .about_ma{
+        width: 35%;
+        top: 10vh;
+        margin: -50px 50px 50px 50px;
+    }
+    .about_bg01{
+        width: 28%;
+        margin-top: 230px;
+    }
+    .pirit_web{
+        display: none;
+    }
+}
+
+/* 平板 */
+@media (min-width: 768px) {
+
+    #about div{
+        width: 80%;
+    }
+
+    #about h2{
+        font-size: 1.3rem;
+    }
+    #about p{
+        width: 80%;
+        font-size: 1.2rem;
+        line-height: 2.3rem;
+    }
+    .about_ma{
+        width: 23%;
+        margin: 50px;
+    }
+    .about_bg01{
+        width: 22%;
+        margin-top: 250px;
+    }
+    .pirit_phone{
+        display: none;
+    }
+}
+
+/* 桌機*/
+@media (min-width: 992px) {
+    #about div{
+        width: 80%;
+    }
+    #about h2{
+        font-size: 1.5rem;
+    }
+    #about p{
+        width: 80%;
+        font-size: 1.2rem;
+        line-height: 4rem;
+    }
+    .about_ma{
+        width: 23%;
+        margin: 50px;
+    }
+    .about_bg01{
+        width: 22%;
+        margin-top: 250px;
+    }
+    .pirit_phone{
+        display: none;
+    }
+}
+
+
+
+
+
+/* ----------------- 營業項目 ----------------- */
+
+#service{
+    background-image: url(./image/about_bg.png);
+    background-size: 100vh;
+}
+
+#service div{
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items: center;
+    width: 80%;
+    text-align: center;
+}
+
+/* #service article{
+    margin: 50px;
+} */
+
+#service p{
+    margin: 30px;
+    font-size: 1.2rem;
+    color: #342E2C;
+    letter-spacing: .15rem;
+    font-weight: 400;
+}
+
+.about_bg02{
+    position: absolute;
+/*     width: 18%; */
+/*     margin-top  : 250px; */
+/*     right: 10px; */
+}
+
+
+/* 手機版 */
+@media (max-width: 767px) {
+    #service article{
+        margin: 10px 10px 50px 10px;
+    }
+    .about_bg02{
+        width: 30%; 
+        margin-top  : 300px;
+        right: 0px;
+    }
+    
+}
+
+/* 平板 */
+@media (min-width: 768px) {
+    #service article{
+        margin: 10px 50px 90px 50px;
+    }
+    .about_bg02{
+        width: 18%; 
+        margin-top  : 250px;
+        right: 10px;
+    }
+    #service p{
+        width: 100%;
+        margin: 50px 0;
+    }
+}
+
+/* 桌機*/
+@media (min-width: 992px) {
+    #service article{
+        margin: 10px 50px 90px 50px;
+    }
+    .about_bg02{
+        width: 18%; 
+        margin-top  : 250px;
+        right: 20px;
+    }
+}
+
+
+
+
+
+/* ----------------- 過場頁面 ----------------- */
+
+
+
+.pass_bg{
+    width: 100%;
+    height: 40vh;
+    background-image: url(./image/about_bg_02.png);
+    background-size:cover;
+/*     background-attachment: fixed; */
+}
+
+
+/* -----------------最新消息 ----------------- */
+
+#news{
+    position: relative;
+    background-image: url(./image/product_bg_02.png);
+    overflow: hidden;
+/*     padding-bottom: 20vh; */
+}
+
+.news_jin{
+    position: absolute;
+    right: -20px;
+/*     top: 70px; */
+/*     width: 20%; */
+}
+
+.news-list{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+}
+
+.news-list article{
+    margin: 20px;
+    border: 2px solid #EEC383;
+    background-color: white;
+
+}   
+
+
+.news-list div{
+    padding: 20px;
+    width: 20%px;
+}
+
+.news-list h2{
+    font-size: 1.2rem;
+    padding: 0 0 10px 0;
+    color: #342E2C;
+}
+
+.news-list p{
+    font-size: 1rem;
+    color: #342E2C;
+}
+
+/* 手機版 */
+@media (max-width: 767px) {
+    .news_jin{
+        top: 20px;
+        width: 40%;
+    }
+    #news{
+/*         padding-bottom: 20vh; */
+    }
+    .pass_bg{
+/*         background-attachment: fixed; */
+    background-position: center;
+    background-color: #00000040;
+    background-blend-mode: multiply;
+    background-size: 300%;
+    }
+}
+
+/* 平板 */
+@media (min-width: 768px) {
+    .news_jin{
+        top: 70px;
+        width: 20%;
+    }
+    #news{
+        padding-bottom: 10vh;
+    }
+    .pass_bg{
+        background-attachment: fixed;
+        background-position: center;
+        background-color: #00000040;
+        background-blend-mode: multiply
+    }
+
+    .news-list article{
+        width: 75%;
+    }
+}
+
+/* 桌機*/
+@media (min-width: 992px) {
+    .news_jin{
+        top: 70px;
+        width: 20%;
+    }
+
+    .news-list article{
+        width: 20%;
+    }
+
+    #news{
+        padding-bottom: 10vh;
+    }
+    .pass_bg{
+        background-attachment: fixed;
+        background-position: center;
+        background-color: #00000040;
+        background-blend-mode: multiply
+    }
+}
+
+
+
+
+/* ----------------- 湯頭介紹 ----------------- */
+
+#product{
+    background-image: url(./image/product_bg_02.png);
+    position: relative;
+    overflow: hidden;
+}
+
+#product .hotpot01{
+    position: absolute;
+/*     width: 35%; */
+/*     right: -200px; */
+}
+
+#product .hotpot02{
+    position: absolute;
+/*     width: 38%; */
+/*     left: -100px; */
+/*     bottom: 10px; */
+}
+
+
+.product_intro{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+/* .product_img{
+    width: 50%;
+} */
+
+.product_intro_01{
+    padding: 50px;
+/*     width: 50%; */
+} 
+
+.product_intro_01 h2{
+    font-size: 1.5rem;
+    letter-spacing: 0.1rem;
+    color: #DA3C2C;
+    margin-bottom: 30px;
+    padding-bottom: 15px;
+    width: 60%;
+    border-bottom: #414141bb 1.5px solid;
+}
+
+.product_intro_01 p{
+    font-size: 1.2rem;
+    line-height: 2.3rem;
+    letter-spacing: 0.08rem;
+    text-align: justify;
+    color: #231815;
+/*     width: 60%; */
+    margin-bottom: 25px;
+}
+
+.sheet01 div{
+    width: 12%;
+}
+
+/* .product_intro_02{
+    padding: 50px;
+    width: 50%;
+} */
+
+.product_intro_02 h2{
+    font-size: 1.5rem;
+    letter-spacing: 0.1rem;
+    color: #DA3C2C;
+    margin-bottom: 30px;
+    padding-bottom: 15px;
+/*     text-align: right; */
+/*     margin-left: 300px; */
+    border-bottom: #414141bb 1.5px solid;
+}
+
+.product_intro_02 p{
+    font-size: 1.2rem;
+    line-height: 2.3rem;
+    letter-spacing: 0.08rem;
+    text-align: justify;
+    color: #231815;
+/*     padding-left: 300px; */
+}
+
+.product_intro_02 p img{
+    width: 80%;
+}
+
+
+.sheet01{
+    font-size: 1.5rem;
+/*     width: 60%; */
+    border: 1.5px solid #231815;
+    margin: 0 0 0 -1.5px;
+    padding: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items:center ;
+    color: #231815;
+}
+
+
+.sheet02{
+/*      width: 60%; */
+    border: 1.5px solid #231815;
+    margin: -1.5px;
+    padding: 20px 0 20px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+/*     align-items:flex-start ; */
+    color: #231815;
+}
+
+.sheet02 .left{
+/*     border: 1px solid #231815; */
+
+    margin: 0px 10px 0 10px;
+    width: 250%;
+}
+
+.sheet02 .contact{  
+    display: flex;
+/*     flex-direction: row; */
+    justify-content: space-between;
+/*     border: 3px solid #231815; */
+    width: 100%;
+}
+
+
+.sheet02 .contact h5{
+    font-size: 1.2rem;
+    letter-spacing: 0.1rem;
+    width: 95%;
+    margin: 12px 0 12px 12px;
+    padding-bottom: 5px;
+    border-bottom: #231815 2px solid;
+}
+
+.sheet02 .contact h6{
+    font-size: 1rem;
+    width: 100%;
+    letter-spacing: 0.02rem;
+    margin: 12px 0 12px 12px;
+}
+
+.sheet02 .qr{
+    width: 35%;
+    padding:10px 10px 0 0px;
+}
+
+
+.sheet02 .shopee{
+    padding:20px 0 0 10px;
+    width: 40%;
+}
+
+
+
+address{
+    font-size: 1.5rem;
+    font-weight: 700;
+    letter-spacing: .1rem;
+    padding-top: 30px;
+    color: #231815;
+    font-style: normal;
+}
+
+
+/* 手機版 */
+@media (max-width: 767px) {
+    .product_img{
+        width: 100%;
+    }
+    .product_intro_01{
+        width: 100%;
+    }
+    .product_intro_01 p{
+        width: 100%;
+    }
+    .product_intro_01 h2{
+        width: 100%;
+    }
+    .product_intro_01 h6{
+        width: 100%;
+    }
+    .sheet02,.sheet01{
+        width: 100%;
+    }
+    .product_intro_02{
+        padding: 50px;
+        width: 100%;
+    }
+
+    .product_intro_02 h2{
+  /*       margin-left: 000px; */
+        text-align: left;
+    }
+    .product_intro_02 p{
+    /*     padding-left: 300px; */
+    }
+
+    .product_intro_02 figure{
+        margin-bottom: 70px;
+    }
+    
+    address{
+        text-align: center;
+    }
+    #product .hotpot02{
+        width: 60%;
+        left: -40px;
+        bottom: 550px;
+    }
+    #product .hotpot01{
+        right: -200px;
+        width: 35%;
+    }
+    
+}
+
+/* 平板 */
+@media (min-width: 768px) {
+    .product_img{
+        width: 70%;
+    }
+    .product_intro_01{
+        width: 80%;
+    }
+    .product_intro_01 p{
+        width: 100%;
+    }
+    .product_intro_01 h2{
+        width: 60%;
+    }
+    .product_intro_01 h6{
+        width: 60%;
+    }
+    .sheet02,.sheet01{
+        width: 100%;
+    }
+    .product_intro_02{
+        padding: 50px;
+        width: 80%;
+    }
+
+    .product_intro_02 h2{
+        margin-left: 0px;
+        text-align: right;
+    }
+    .product_intro_02 p{
+        padding-left: 0px;
+    }
+    .product_intro_02 figure{
+        margin-left: 50%;
+    }
+    #product .hotpot02{
+        width: 38%;
+        left: -100px;
+        bottom: 10px;
+    }
+    #product .hotpot01{
+        display: none;
+        right: -100px;
+        width: 50%;
+        top: -100px;
+    }
+    address{
+        text-align: center;
+    }
+}
+
+/* 桌機*/
+@media (min-width: 992px) {
+    .product_img{
+        width: 50%;
+        overflow: hidden;
+    }
+    .product_img img{
+        width: auto;
+        right: -200px;
+    }
+    .product_intro_01{
+        width: 50%;
+    }
+    .product_intro_01 p{
+        width: 60%;
+    }
+    .product_intro_01 h2{
+        width: 60%;
+    }
+    .product_intro_01 h6{
+        width: 120px;
+    }
+    .sheet02,.sheet01{
+        width: 60%;
+    }
+    .product_intro_02{
+        padding: 50px;
+        width: 50%;
+    }
+  
+    .product_intro_02 h2{
+        margin-left: 38%;
+        text-align: right;
+    }
+    .product_intro_02 p{
+        padding-left: 38%;
+    }
+    #product .hotpot02{
+        width: 33%;
+        left: -100px;
+        bottom: 8vh;
+    }
+    .product_intro_02 figure{
+        margin-left: 50%;
+    }
+    address{
+        padding-left: 200px;
+        text-align: right;
+    }
+    #product .hotpot01{
+        display: block;
+        right: -200px;
+        width: 35%;
+        top: 10px;
+    }
+    
+}
+
+
+
+/* ----------------- 加盟專區 ----------------- */
+
+#partner{
+    position: relative;
+    background-color: #DA3C2C;
+}
+
+#partner h1{
+    color: white;
+    border-color: white;
+}
+
+.partner_form{
+    display: flex;
+    border: 3px solid #EEC383;
+    border-radius: 10px;
+/*     width: 60%; */
+/*     height: 300px; */
+    margin-bottom: 100px;
+}
+
+.partner_photo{
+/*     width: 60%; */
+    overflow: hidden;
+/*     border-radius: 6px 0 0 6px ; */
+/*     border-right: 2px solid #EEC383; */
+}
+
+.partner_photo img{
+    height: 100%;
+    object-fit: cover;
+}
+
+
+/* .partner_intro{
+    padding: 30px 50px 30px 30px;
+} */
+
+.partner_intro h2{
+    font-size: 1.5rem;
+    color: #f8ecd9;
+    margin:20px 0 30px 0;
+    letter-spacing: 0.2rem;
+
+}.partner_intro p{
+    font-size: 1rem;
+    font-weight: 400;
+    color: #EEC383;
+    letter-spacing: 0.12rem;
+    line-height: 2rem;
+}
+
+.partner_intro h3{
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: #ffffff;
+    letter-spacing: 0.2rem;
+    line-height: 1.6rem;
+}
+
+/* 手機版 */
+@media (max-width: 767px) {
+    .partner_form{
+        width: 80%;
+        flex-direction: column;
+
+    }
+    .partner_photo{
+        height:35vh;
+/*      border-right: 2px solid #EEC383; */
+        border-radius: 6px 6px 0 0 ;
+    }
+    .partner_intro{
+        text-align: center;
+        padding: 15px;
+    }
+}
+
+/* 平板 */
+@media (min-width: 768px) {
+    .partner_form{
+        width: 90%;
+/*         height: 300px; */
+        flex-direction: row;
+    }
+    .partner_photo{
+        width: 100%;
+        border-right: 2px solid #EEC383;
+        border-radius: 6px 0 0 6px ;
+    }
+    .partner_intro{
+        width: 200%;
+        padding: 30px 50px 30px 30px;
+        text-align: justify;
+
+    }
+}
+
+/* 桌機*/
+@media (min-width: 992px) {
+    .partner_form{
+        width: 60%;
+        height: 55vh;
+        flex-direction:row;
+    }
+    .partner_photo{
+        width: 100%;
+        border-right: 2px solid #EEC383;
+        border-radius: 6px 0 0 6px ;
+    }
+    .partner_intro{
+        padding: 30px 50px 30px 30px;
+        width: 200%;
+    }
+}
+
+
+
+
+/* ----------------- 聯絡我們 ----------------- */
+
+#contact_us{
+    background-color: #342E2C;
+}
+
+#contact_us h1{
+    color: white;
+    border-color: #EEC383;
+}
+
+#contact_us .add_1{
+    display: flex;
+/*     flex-direction: row; */
+/*     justify-content: space-between; */
+/*     width: 60%; */
+}
+
+#contact_us .add_2{
+    display: flex;
+/*     flex-direction: row; */
+}
+
+/* #contact_us .add_2 div{
+   width: 18%;
+   margin-top: 3px;
+} */
+
+#contact_us h2{
+/*     margin-left: 30px; */
+/*     margin-bottom: 30px; */
+/*     font-size: 1.1rem; */
+    font-weight: 400;
+    color: #EAE5D7;
+    letter-spacing: 0.1rem;
+}
+
+#contact_us .fb_line{
+    display: flex;
+/*     flex-direction: row-reverse; */
+}
+
+
+/* #contact_us h3{
+    width: 40px;
+    padding: 5px;    
+} */
+
+/* #contact_us h3:hover{
+    width: 42px;
+    padding: 5px;    
+} */
+
+#contact_us .shop_list{
+    display: flex;
+/*     width: 60%; */
+    border: 3px solid #DA3C2C;
+/*     height: 32vh; */
+    border-radius: 10px;
+    margin: 5vh 0 15vh 0;
+/*     padding-right: 30px; */
+}
+/* #contact_us .shop_list div{
+    width: 60%;
+} */
+
+#contact_us .shop_list h4{
+    margin: 35px 0 30px 30px;
+    color: hsla(0, 0%, 100%, 0.8);
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+#contact_us .shop_list p{
+    margin: 20px 0 15px 30px;
+    color: hsla(0, 0%, 100%, 0.8);
+    font-size: 0.9rem;
+    font-weight: 400;
+    line-height: 1.7rem;
+    letter-spacing: 0.1rem;
+}
+
+#contact_us .img_frame{
+    overflow: hidden;
+/*     border-radius: 6px 0 0 6px; */
+}
+
+#contact_us .shop_list img{
+    height: 100%;
+    object-fit:cover;
+/*     border-right: 2px solid #DA3C2C; */
+}
+
+
+#contact_us iframe{
+    padding: 20px ;
+}
+
+/* 手機版 */
+@media (max-width: 767px) {
+    #contact_us .add_1{
+        flex-direction: column;
+        width: 60%;
+/*         justify-content: space-between; */
+    }
+    #contact_us .add_2{
+        flex-direction: column;
+        text-align: center;
+
+    }
+    #contact_us .add_2 div{
+        width: 70%;
+        margin: auto;
+        padding-bottom: 50px;
+     }
+     #contact_us h2{
+        font-size: 1.3rem;
+        text-align: center;
+        margin-bottom: 50px;
+     }
+     #contact_us h3{
+        width: 100px;
+        padding: 20px;    
+    }
+    #contact_us .fb_line{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    #contact_us .shop_list{
+        flex-direction: column;
+        width: 80%;
+        height: 100%;
+    }
+    #contact_us .shop_list div{
+        width: 100%;
+    }
+    #contact_us .shop_list img{
+        border-bottom: 2px solid #DA3C2C;
+    }
+    #contact_us .img_frame{
+        border-radius: 6px 6px 0 0;
+    }
+    
+}
+
+/* 平板 */
+@media (min-width: 768px) {
+    #contact_us .add_1{
+        flex-direction: row;
+        width: 90%;
+/*         justify-content: space-between; */
+    }
+    #contact_us .add_2{
+        flex-direction: row;
+    }
+    #contact_us .add_2 div{
+        width: 18%;
+        margin-top: 3px;
+     }
+     #contact_us h2{
+        font-size: 1.1rem;
+        margin-left: 30px;
+        margin-bottom: 30px;
+     }
+     #contact_us h3{
+        width: 40px;
+        padding: 5px;    
+    }
+    #contact_us .fb_line{
+        flex-direction: row-reverse;
+    }
+    #contact_us .shop_list{
+        width: 90%;
+/*         height: 32vh; */
+/*         padding-right: 30px; */
+    }
+    #contact_us .shop_list div{
+        width: 60%;
+    }
+    #contact_us .shop_list img{
+        border-right: 2px solid #DA3C2C;
+    }
+    #contact_us .img_frame{
+        border-radius: 6px 0 0 6px;
+    }
+    
+    
+}
+
+/* 桌機*/
+@media (min-width: 992px) {
+    #contact_us .add_1{
+        flex-direction: row;
+        justify-content: space-between;
+        width: 60%;
+    }
+    #contact_us .add_2{
+        flex-direction: row;
+    }
+    #contact_us .add_2 div{
+        width: 18%;
+        margin-top: 3px;
+     }
+     #contact_us h2{
+        font-size: 1.1rem;
+        margin-left: 30px;
+        margin-bottom: 30px;
+     }
+     #contact_us h3{
+        width: 40px;
+        padding: 5px;    
+    }
+    #contact_us .fb_line{
+        flex-direction: row-reverse;
+    }
+    #contact_us .shop_list{
+        width: 60%;
+        height: 32vh;
+/*         padding-right: 30px; */
+    }
+    #contact_us .shop_list div{
+        width: 60%;
+    }
+    #contact_us .shop_list img{
+        border-right: 2px solid #DA3C2C;
+    }
+    #contact_us .img_frame{
+        border-radius: 6px 0 0 6px;
+    }
+    
+    
+}
+
+
+
+
+
+/* ----------------- footer ----------------- */
+
+footer{
+    background-color: #EAE5D7;
+    height: 30vh;
+}
+
+footer .top{
+/*     display: flex; */
+/*     flex-direction: row; */
+/*     justify-content: space-evenly; */
+    width: 100%;
+    padding: 28px 0;
+}
+
+footer .top_2{
+/*     display: flex; */
+/*     flex-direction: row; */
+}
+
+/* footer h2{
+    margin-right: 50px;
+    width: 25%;
+    margin-top: 10px;
+} */
+
+footer li{
+    list-style: none;
+    color: #342E2C;
+/*     line-height: 2rem; */
+    letter-spacing: 0.1rem;
+    font-weight: 400;
+}
+
+/* footer .top figure{
+    width: 15%;
+} */
+
+footer .down{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 0.8rem;
+    color: #342E2C;
+    letter-spacing: 0.1rem;
+    font-weight: 400;
+    padding: 15px 40px;
+/*     margin-top: 50px; */
+    background-color: #e7dab5;
+}
+
+footer .down p{
+    display: flex;
+}
+
+footer .down img{
+/*     width: 10%; */
+/*     height: 10%; */
+    padding: 0 5px;
+}
+
+.top_2 a{
+    color:#342E2C;
+/*     font-size: 1rem; */
+/*     line-height: 2rem; */
+    font-weight: 400;
+    text-decoration: none;
+    border-bottom: #ffffff00 1px solid;
+}
+
+.top_2 a:hover{
+    color:#DA3C2C;
+/*     font-size: 1rem; */
+/* line-height: 2rem; */
+    font-weight: 700;
+    padding-bottom: 1px;
+    border-bottom: 1px solid #DA3C2C;
+}
+
+
+
+#gotop{
+    display: none;
+    position: fixed;
+    color: #000000de;
+    border-radius: 5px;
+    bottom: 133px;
+/*     right: 80px; */
+    width: 50px;
+    height: 50px;
+    cursor: pointer; /* 滑過去變成手 */
+/*     background-color: rgba(68, 68, 68, 0.349); */
+    line-height: 50px; /* 要設定跟行高一樣 */
+/*     font-size: 50px; */
+}
+
+#gotop:hover{
+    color: #DA3C2C;
+}
+
+/* 手機版 */
+@media (max-width: 767px) {
+    footer{
+        height: 95vh;
+    }
+    footer .top{
+/*         flex-direction: column; */
+ /*        justify-content: space-evenly; */
+    }
+    footer .top_2{
+/*         flex-direction: column; */
+        text-align: center;
+    }
+    footer .top_2 nav{
+        margin-top: 30px;
+    }
+    footer h2{
+/*         margin-right: 50px; */
+        width: 30%;
+        margin: auto;
+        padding-left: 10px;
+    }
+    .top_2 a{
+        font-size: 1.6rem;
+        line-height: 4rem;
+    }
+    .top_2 a:hover{
+        font-size: 1.6rem;
+        line-height: 4rem;
+    }
+    footer .top figure{
+        width:60%;
+        margin: auto;
+        padding:30px 0 0 15px;
+    }
+    #gotop{
+        right: 50px;
+        font-size: 70px;
+    }
+    footer .down{
+        flex-direction: column;
+    }
+    footer .down img{
+        width: 15%;
+        height: 15%;
+    }
+}
+
+/* 平板 */
+@media (min-width: 768px) {
+    footer{
+        height: 27vh;
+    }
+    footer .top{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    footer .top_2{
+        display: flex;
+        flex-direction: row;
+    }
+    footer h2{
+        margin-right: 50px;
+        width: 25%;
+        margin-top: 10px;
+    }
+    .top_2 a{
+        font-size: 1rem;
+        line-height: 2rem;
+    }
+    .top_2 a:hover{
+        font-size: 1rem;
+        line-height: 2rem;
+    }
+    footer .top figure{
+        width: 30%;
+        }
+    #gotop{
+        right: 80px;
+        font-size: 50px;
+    }
+    footer .down img{
+        width: 10%;
+    }
+}
+
+/* 桌機*/
+@media (min-width: 992px) {
+    footer{
+        height: 30vh;
+    }
+    footer .top{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    footer .top_2{
+        display: flex;
+        flex-direction: row;
+    }
+    footer h2{
+        margin-right: 50px;
+        width: 25%;
+        margin-top: 10px;
+    }
+    .top_2 a{
+        font-size: 1rem;
+        line-height: 2rem;
+    }
+    .top_2 a:hover{
+        font-size: 1rem;
+        line-height: 2rem;
+    }
+    footer .top figure{
+    width: 15%;
+    }
+    #gotop{
+        right: 80px;
+        font-size: 50px;
+    }
+    footer .down img{
+        width: 10%;
+/*         height: 10%; */
+    }
+} 
+
+
+
+
+
+
+
+
+
+/* 手機版 */
+@media (max-width: 767px) {
+  
+}
+
+/* 平板 */
+@media (min-width: 768px) {
+
+}
+
+/* 桌機*/
+@media (min-width: 992px) {
+
+}
